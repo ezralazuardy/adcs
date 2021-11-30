@@ -1,0 +1,99 @@
+@import '../fonts/nunito-sans/style.css';
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'vue-select/dist/vue-select.css';
+
+/**
+ * https://stackoverflow.com/questions/25704650/disable-blue-highlight-when-touch-press-object-with-cursorpointer
+ */
+button, textarea, input, select, a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/**
+ * https://stackoverflow.com/questions/25180140/make-input-value-uppercase-in-css-without-affecting-the-placeholder
+ */
+input {
+    text-transform: uppercase;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    text-transform: none;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    text-transform: none;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    text-transform: none;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    text-transform: none;
+}
+
+::placeholder { /* Recent browsers */
+    text-transform: none;
+}
+
+/**
+ * Clicakble Inertia.js table header
+ */
+.clickable-table-header th:hover {
+    cursor: pointer;
+}
+
+/**
+ * Vue Select styling
+ */
+.vue-select .vs__search::placeholder,
+.vue-select .vs__dropdown-toggle,
+.vue-select .vs__dropdown-menu {
+    font-size: 16px;
+    font-family: "Nunito Sans", serif;
+    padding: 6px 2px;
+}
+
+.vue-select .vs__clear,
+.vue-select .vs__open-indicator {
+    display: none;
+}
+
+.vs__search {
+    text-transform: none;
+}
+
+/**
+ * https://stackoverflow.com/questions/60186557/how-to-put-notification-badges-on-icons
+ */
+.icon-badge-container {
+    position: relative;
+}
+
+.icon-badge-icon {
+    position: relative;
+}
+
+.icon-badge {
+    background-color: #dc2626;
+    font-size: 12px;
+    padding-top: 1px;
+    color: white;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 40%;
+    position: absolute;
+    top: -5px;
+    left: 18px;
+}
+
+select:disabled {
+    background-color: #EFF0F2 !important;
+}
+
+select:disabled:hover {
+    cursor: not-allowed;
+}
