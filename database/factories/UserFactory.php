@@ -3,11 +3,9 @@
 namespace Database\Factories;
 
 use App\Models\Role;
-use App\Models\Team;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Hash;
-use Laravel\Jetstream\Features;
 
 class UserFactory extends Factory
 {
@@ -25,31 +23,13 @@ class UserFactory extends Factory
      */
     public function definition(): array
     {
-        $nip = $this->faker->unique()->numberBetween(100000, 999999);
+        $email = $this->faker->email();
         return [
             'role' => Role::operator(),
             'name' => $this->faker->name(),
             'phone' => $this->faker->phoneNumber(),
-            'nip' => $nip,
-            'password' => Hash::make($nip)
+            'email' => $email,
+            'password' => Hash::make($email)
         ];
-    }
-
-    /**
-     * Indicate that the user should have a personal team.
-     *
-     * @return $this
-     */
-    public function withPersonalTeam(): static
-    {
-        if (!Features::hasTeamFeatures()) {
-            return $this->state([]);
-        }
-        return $this->has(
-            Team::factory()->state(function (array $attributes, User $user) {
-                return ['name' => $user->name . '\'s Team', 'user_id' => $user->id, 'personal_team' => true];
-            }),
-            'ownedTeams'
-        );
     }
 }

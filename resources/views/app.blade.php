@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#4338CA"/>
-    <meta name="keywords" content="Stocktake">
-    <meta name="description" content="Item Stock Management System for Unilever Indonesia.">
-    <title inertia>{{ config('app.name', 'Stocktake') }}</title>
+    <meta name="theme-color" content="#A64D79"/>
+    <meta name="keywords" content="ADCS">
+    <meta name="description" content="Dashboard panel for Automated Autonomous Drone Communication System.">
+    <title inertia>{{ config('app.name', 'ADCS') }}</title>
     <link rel="preconnect" href="{{ config('app.url') }}">
     <link rel="manifest" href="/manifest.json">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">

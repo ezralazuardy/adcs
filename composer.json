@@ -21,7 +21,9 @@
         "laravel/tinker": "^2.5",
         "maatwebsite/excel": "^3.1",
         "monicahq/laravel-cloudflare": "^2.0",
+        "php-mqtt/client": "^1.1",
         "protonemedia/inertiajs-tables-laravel-query-builder": "^1.2",
+        "pusher/pusher-php-server": "^7.0",
         "sentry/sentry-laravel": "^2.9",
         "spatie/laravel-query-builder": "^4.0",
         "tightenco/ziggy": "^1.0"

@@ -1,7 +1,7 @@
 {
-    "name": "Stocktake",
-    "short_name": "Stocktake",
-    "description": "Item Stock Management System for Unilever Indonesia.",
+    "name": "ADCS",
+    "short_name": "ADCS",
+    "description": "Dashboard panel for Automated Autonomous Drone Communication System.",
     "start_url": "/",
     "icons": [
         {
@@ -17,7 +17,7 @@
             "purpose": "any maskable"
         }
     ],
-    "theme_color": "#4338CA",
-    "background_color": "#4338CA",
+    "theme_color": "#A64D79",
+    "background_color": "#A64D79",
     "display": "standalone"
 }

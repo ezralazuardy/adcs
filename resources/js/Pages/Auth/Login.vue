@@ -1,5 +1,5 @@
 <template>
-    <Head title="Log in"/>
+    <Head title="Masuk"/>
     <jet-authentication-card>
         <template #logo>
             <jet-authentication-card-logo/>
@@ -10,12 +10,12 @@
         </div>
         <form @submit.prevent="submit">
             <div>
-                <jet-label for="nip" value="NIP"/>
-                <jet-input id="nip" type="text" class="mt-1 block w-full" v-model="form.nip" required autofocus/>
+                <jet-label for="email" value="Email"/>
+                <jet-input id="email" type="email" class="mt-1 block w-full normal-case" v-model="form.email" required autofocus/>
             </div>
             <div class="mt-4">
                 <jet-label for="password" value="Kata Sandi"/>
-                <jet-input id="password" type="password" class="mt-1 block w-full" v-model="form.password" required
+                <jet-input id="password" type="password" class="mt-1 block w-full normal-case" v-model="form.password" required
                            autocomplete="current-password"/>
             </div>
             <div class="block mt-4">
@@ -67,7 +67,7 @@ export default defineComponent({
     data() {
         return {
             form: this.$inertia.form({
-                nip: null,
+                email: null,
                 password: null,
                 remember: false
             })

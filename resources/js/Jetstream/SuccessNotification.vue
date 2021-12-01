@@ -24,7 +24,7 @@
                             </div>
                             <div class="ml-4 flex-shrink-0 flex">
                                 <button @click="close"
-                                        class="bg-white rounded-md inline-flex text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                        class="bg-white rounded-md inline-flex text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500">
                                     <span class="sr-only">Tutup</span>
                                     <x-icon class="h-5 w-5" aria-hidden="true"/>
                                 </button>

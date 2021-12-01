@@ -40,10 +40,10 @@
                 <jet-input-error :message="form.errors.phone" class="mt-2"/>
             </div>
             <div class="col-span-6 sm:col-span-4">
-                <jet-label for="nip" value="Nomor Induk Pegawai"/>
-                <jet-input id="nip" type="text" class="mt-1 block w-full bg-gray-100 cursor-not-allowed capitalize"
-                           v-model="form.nip" disabled/>
-                <jet-input-error :message="form.errors.nip" class="mt-2"/>
+                <jet-label for="email" value="Email"/>
+                <jet-input id="email" type="email" class="mt-1 block w-full bg-gray-100 cursor-not-allowed normal-case"
+                           v-model="form.email" disabled/>
+                <jet-input-error :message="form.errors.email" class="mt-2"/>
             </div>
         </template>
         <template #actions>
@@ -84,7 +84,7 @@ export default defineComponent({
                 _method: 'PUT',
                 name: this.user.name,
                 phone: this.user.phone,
-                nip: this.user.nip,
+                email: this.user.email,
                 photo: null,
             }),
             photoPreview: null

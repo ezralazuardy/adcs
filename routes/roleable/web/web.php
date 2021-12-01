@@ -22,15 +22,4 @@ Route::group([
 
     });
 
-    /**
-     * Operator web routes
-     */
-    Route::group([
-        'middleware' => ['authorizable.operator']
-    ], static function () {
-
-        include 'operator/web.php';
-
-    });
-
 });

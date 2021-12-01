@@ -1,6 +1,17 @@
 <?php
 
 Route::group([
+    'middleware' => ['authorizable.mqtt']
+], static function () {
+
+    /**
+     * MQTT api routes
+     */
+    include 'mqtt/api.php';
+
+});
+
+Route::group([
     'middleware' => ['auth:sanctum', 'verified']
 ], static function () {
 
@@ -15,15 +26,5 @@ Route::group([
 
     });
 
-    /**
-     * Operator api routes
-     */
-    Route::group([
-        'middleware' => ['authorizable.operator']
-    ], static function () {
-
-        include 'operator/api.php';
-
-    });
-
 });
+

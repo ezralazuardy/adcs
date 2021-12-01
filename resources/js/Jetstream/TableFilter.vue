@@ -3,7 +3,7 @@
         <template #button>
             <filter-icon
                 class="h-5 w-5"
-                :class="{'text-gray-400': !hasEnabledFilter, 'text-indigo-600': hasEnabledFilter}"
+                :class="{'text-gray-400': !hasEnabledFilter, 'text-pink-600': hasEnabledFilter}"
                 aria-hidden="true"/>
         </template>
         <div role="menu" aria-orientation="vertical" aria-labelledby="sort-menu">
@@ -13,7 +13,7 @@
                     <select
                         :value="filter.value"
                         @change="onChange(filter.key, $event.target.value)"
-                        class="block cursor-pointer w-full shadow-sm sm:text-sm border-gray-300 rounded-md focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                        class="block cursor-pointer w-full shadow-sm sm:text-sm border-gray-300 rounded-md focus:ring focus:ring-pink-200 focus:ring-opacity-50">
                         <option v-for="(option, key) in filter.options" :value="key" :key="key">{{ option }}</option>
                     </select>
                 </div>

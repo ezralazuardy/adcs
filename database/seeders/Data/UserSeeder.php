@@ -53,17 +53,17 @@ class UserSeeder extends Seeder
             'role' => Role::administrator(),
             'name' => 'Administrator',
             'phone' => $this->faker->phoneNumber(),
-            'nip' => '241178',
-            'password' => Hash::make('241178')
+            'email' => 'admin@adcs.test',
+            'password' => Hash::make('admin')
         ]);
-        User::create([
-            'role' => Role::operator(),
-            'name' => $this->faker->name(),
-            'phone' => $this->faker->phoneNumber(),
-            'nip' => '752114',
-            'password' => Hash::make('752114')
-        ]);
-        User::factory(49)->create();
+//        User::create([
+//            'role' => Role::operator(),
+//            'name' => $this->faker->name(),
+//            'phone' => $this->faker->phoneNumber(),
+//            'email' => 'operator@adcs.com',
+//            'password' => Hash::make('operator123')
+//        ]);
+//        User::factory(18)->create();
     }
 
     protected function production(): void
@@ -72,8 +72,8 @@ class UserSeeder extends Seeder
             'role' => Role::administrator(),
             'name' => 'Administrator',
             'phone' => $this->faker->phoneNumber(),
-            'nip' => '000000',
-            'password' => Hash::make('000000')
+            'email' => 'admin@adcs.com',
+            'password' => Hash::make('admin')
         ]);
     }
 }

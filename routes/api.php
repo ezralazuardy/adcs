@@ -13,7 +13,7 @@
 
 Route::group([
     'as' => 'api.'
-], static function() {
+], static function () {
 
     /**
      * Role-specific api routes

@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Helper\HasProfilePhoto;
 use Based\Fluent\Fluent;
 use Based\Fluent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -10,7 +11,6 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Queue\SerializesModels;
 use Laravel\Fortify\TwoFactorAuthenticatable;
-use Laravel\Jetstream\HasProfilePhoto;
 use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
@@ -20,14 +20,14 @@ class User extends Authenticatable
     #[BelongsTo]
     public Role $role;
 
-    public string $name, $nip, $password;
+    public string $name, $email, $password;
     public ?string $phone;
 
     protected $fillable = [
         'role_id',
         'name',
         'phone',
-        'nip',
+        'email',
         'password'
     ];
 

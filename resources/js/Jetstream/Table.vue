@@ -85,12 +85,12 @@ table :deep(tr:hover td) {
         <slot name="tableWrapper" :meta="meta">
             <div class="flex flex-col">
                 <div
-                    class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8 scrollbar-thin scrollbar-thumb-indigo-800 scrollbar-track-indigo-200">
+                    class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8 scrollbar-thin scrollbar-thumb-pink-800 scrollbar-track-pink-200">
                     <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
                         <div class="shadow border-b border-gray-200" :class="[bottomSpacing ? 'mb-8' : 'mb-0']">
                             <slot name="table">
                                 <table class="min-w-full divide-y divide-gray-200 bg-white mt-4 lg:mt-6 z-0">
-                                    <thead class="bg-indigo-100 text-white">
+                                    <thead class="bg-pink-100 text-white">
                                     <tr :class="[clickableHeader ? 'clickable-table-header' : '']">
                                         <slot name="head"/>
                                     </tr>

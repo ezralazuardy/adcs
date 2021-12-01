@@ -9,12 +9,12 @@ use Illuminate\Support\Facades\Hash;
 class AuthenticateLoginAttempt
 {
     /**
-     * @param Request $request
+     * @param  Request  $request
      * @return User|null
      */
     public function __invoke(Request $request): ?User
     {
-        $user = User::whereNip($request->nip)->first();
+        $user = User::whereEmail($request->email)->first();
         return $user && Hash::check($request->password, $user->password) ? $user : null;
     }
 }

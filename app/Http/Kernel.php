@@ -4,6 +4,7 @@ namespace App\Http;
 
 use App\Http\Middleware\Authenticate;
 use App\Http\Middleware\Authorizable\ByAdministrator;
+use App\Http\Middleware\Authorizable\ByMqttDevice;
 use App\Http\Middleware\Authorizable\ByOperator;
 use App\Http\Middleware\DecodeUrls;
 use App\Http\Middleware\EncryptCookies;
@@ -97,6 +98,7 @@ class Kernel extends HttpKernel
         'throttle' => ThrottleRequests::class,
         'verified' => EnsureEmailIsVerified::class,
         'authorizable.administrator' => ByAdministrator::class,
-        'authorizable.operator' => ByOperator::class
+        'authorizable.operator' => ByOperator::class,
+        'authorizable.mqtt' => ByMqttDevice::class
     ];
 }

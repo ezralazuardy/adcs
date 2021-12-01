@@ -38,7 +38,7 @@ return [
     |
     */
 
-    'env_staging' => (bool)env('APP_ENV_STAGING', false),
+    'env_staging' => (bool) env('APP_ENV_STAGING', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -50,7 +50,7 @@ return [
     |
     */
 
-    'env_ci_cd' => (bool)env('APP_ENV_CI_CD', false),
+    'env_ci_cd' => (bool) env('APP_ENV_CI_CD', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -63,7 +63,7 @@ return [
     |
     */
 
-    'debug' => (bool)env('APP_DEBUG', false),
+    'debug' => (bool) env('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -75,7 +75,7 @@ return [
     |
     */
 
-    'force_https' => (bool)env('FORCE_HTTPS', false),
+    'force_https' => (bool) env('FORCE_HTTPS', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -169,7 +169,30 @@ return [
     |
     */
 
-    'truncate_on_db_seed' => (bool)env('TRUNCATE_ON_DB_SEED', true),
+    'truncate_on_db_seed' => (bool) env('TRUNCATE_ON_DB_SEED', true),
+
+    /*
+    |--------------------------------------------------------------------------
+    | HiveMQ Cloud Broker Configuration
+    |--------------------------------------------------------------------------
+    |
+    | Configure the HiveMQ Cloud Broker for MQTT usage.
+    |
+    */
+
+    'hivemq_cloud_broker_host' => env('HIVEMQ_CLOUD_BROKER_HOST', 'localhost'),
+
+    'hivemq_cloud_broker_port' => (int) env('HIVEMQ_CLOUD_BROKER_PORT', 8883),
+
+    'hivemq_cloud_broker_cliend_id' => env('HIVEMQ_CLOUD_BROKER_CLIENT_ID'),
+
+    'hivemq_cloud_broker_qos' => (int) env('HIVEMQ_CLOUD_BROKER_QOS', 2),
+
+    'hivemq_cloud_broker_username' => env('HIVEMQ_CLOUD_BROKER_USERNAME'),
+
+    'hivemq_cloud_broker_password' => env('HIVEMQ_CLOUD_BROKER_PASSWORD'),
+
+    'hivemq_cloud_broker_backend_channel' => env('HIVEMQ_CLOUD_BROKER_BACKEND_CHANNEL', 'adcs/backend'),
 
     /*
     |--------------------------------------------------------------------------
@@ -220,7 +243,7 @@ return [
          */
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
+        App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         App\Providers\FortifyServiceProvider::class,

@@ -5,7 +5,7 @@
       <svg
           aria-hidden="true"
           class="w-3 h-3 ml-2"
-          :class="{ 'text-gray-400': !cell.sort, 'text-indigo-500': cell.sort }"
+          :class="{ 'text-gray-400': !cell.sort, 'text-pink-500': cell.sort }"
           v-if="cell.sortable"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 320 512"

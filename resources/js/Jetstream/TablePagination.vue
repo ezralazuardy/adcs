@@ -49,7 +49,7 @@
                                 :is="link.url ? 'inertia-link' : 'div'"
                                 :href="link.url"
                                 class="inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700"
-                                :class="{'hover:bg-gray-100': link.url, 'bg-indigo-100': link.active}"
+                                :class="{'hover:bg-gray-100': link.url, 'bg-pink-100': link.active}"
                             >{{ link.label }}
                             </component>
                         </slot>
