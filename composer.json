@@ -9,6 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.0",
+        "ext-pdo": "*",
         "based/laravel-fluent": "^0.0.6",
         "fakerphp/faker": "1.16.0",
         "fruitcake/laravel-cors": "^2.0",
@@ -19,7 +20,6 @@
         "laravel/octane": "^1.0",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
-        "maatwebsite/excel": "^3.1",
         "monicahq/laravel-cloudflare": "^2.0",
         "php-mqtt/client": "^1.1",
         "protonemedia/inertiajs-tables-laravel-query-builder": "^1.2",

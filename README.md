@@ -53,26 +53,25 @@ Drone instances (min. 1 instance) and the Commander Server instance.
 6. [Laravel Mix](https://laravel.com/docs/8.x/mix)
 7. [Laravel Broadcasting](https://laravel.com/docs/8.x/broadcasting)
 8. [Laravel Jetstream](https://jetstream.laravel.com)
-9. [Laravel Excel](https://laravel-excel.com)
-10. [Laravel Fluent](https://github.com/lepikhinb/laravel-fluent)
-11. [Laravel Octane](https://laravel.com/docs/8.x/octane) <sup><i>optional</i></sup>
-12. [Laravel Cloudflare](https://github.com/monicahq/laravel-cloudflare) <sup><i>optional</i></sup>
-13. [Laravel Sail](https://laravel.com/docs/8.x/sail) <sup><i>optional</i></sup>
-14. [PHP PSR2 Coding Style Standard](https://www.php-fig.org/psr/psr-2)
-15. [PHPStan](https://phpstan.org/) (with [Larastan](https://github.com/nunomaduro/larastan) extension)
-16. [Inertia.js](https://inertiajs.com)
-17. [Vue.js](https://vuejs.org)
-18. [Webpack](https://webpack.js.org)
-19. [Supercronic](https://github.com/aptible/supercronic)
-20. [Supervisor](http://supervisord.org/index.html)
-21. [MySQL](https://dev.mysql.com) `v5`
-22. [PHP MQTT](https://github.com/php-mqtt/client)
-23. [Pusher](https://pusher.com)
-24. [Swoole](https://www.swoole.co.uk) <sup><i>optional</i></sup>
-25. [Github Action CI/CD](https://github.com/features/actions) <sup><i>optional</i></sup>
-26. [Docker](https://www.docker.com) <sup><i>optional</i></sup>
-27. [Sentry](https://sentry.io) <sup><i>optional</i></sup>
-28. [Yarn](https://yarnpkg.com) <sup><i>optional</i></sup>
+9. [Laravel Fluent](https://github.com/lepikhinb/laravel-fluent)
+10. [Laravel Octane](https://laravel.com/docs/8.x/octane) <sup><i>optional</i></sup>
+11. [Laravel Cloudflare](https://github.com/monicahq/laravel-cloudflare) <sup><i>optional</i></sup>
+12. [Laravel Sail](https://laravel.com/docs/8.x/sail) <sup><i>optional</i></sup>
+13. [PHP PSR2 Coding Style Standard](https://www.php-fig.org/psr/psr-2)
+14. [PHPStan](https://phpstan.org/) (with [Larastan](https://github.com/nunomaduro/larastan) extension)
+15. [Inertia.js](https://inertiajs.com)
+16. [Vue.js](https://vuejs.org)
+17. [Webpack](https://webpack.js.org)
+18. [Supercronic](https://github.com/aptible/supercronic)
+19. [Supervisor](http://supervisord.org/index.html)
+20. [MySQL](https://dev.mysql.com) `v5`
+21. [PHP MQTT](https://github.com/php-mqtt/client)
+22. [Pusher](https://pusher.com)
+23. [Swoole](https://www.swoole.co.uk) <sup><i>optional</i></sup>
+24. [Github Action CI/CD](https://github.com/features/actions) <sup><i>optional</i></sup>
+25. [Docker](https://www.docker.com) <sup><i>optional</i></sup>
+26. [Sentry](https://sentry.io) <sup><i>optional</i></sup>
+27. [Yarn](https://yarnpkg.com) <sup><i>optional</i></sup>
 
 <br/>
 
