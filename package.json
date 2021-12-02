@@ -27,7 +27,7 @@
         "tailwindcss": "^2.2.19",
         "vue": "3.2.23",
         "vue-loader": "^16.8.3",
-        "workbox-webpack-plugin": "^6.4.1"
+        "workbox-webpack-plugin": "^6.4.2"
     },
     "dependencies": {
         "@babel/core": "^7.15.8",
