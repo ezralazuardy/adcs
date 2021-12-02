@@ -19,22 +19,28 @@
 
 # 🖥️ adcs
 
-A simple dashboard panel for Automated Autonomous Drone Communication System.
+A manager and backend server for Automated Autonomous Drone Communication System.
 
 🔨 Built with [Laravel Jetstream](https://jetstream.laravel.com) and [Inertia.js](https://inertiajs.com) for Single Page Application builder ([PWA](https://web.dev/progressive-web-apps) enabled).
 
 ⚡ Supercharged with [Laravel Octane](https://laravel.com/docs/8.x/octane) for massive server performance boost.
-
-<br/>
 
 > ⚠️ **Important Notes**
 >
 > - [Swoole](https://www.swoole.co.uk) need to be installed in the server in order to use Laravel Octane.
 > - Please respect the Laravel Octane [rules and limitations](https://laravel.com/docs/8.x/octane#dependency-injection-and-octane) in order to avoid memory leaks.
 
+### 🤖 Runtime Components
+
+In order to test the ADCS functionalities, you need to run several component instance in this [repository](https://github.com/ezralazuardy/adcs-runtime). Based on the given topology below, you need to run the Drone instances (min. 1 instance) and the Commander Server instance.
+
+### 🗺️ Topology
+
+![ADCS Software Topology](https://user-images.githubusercontent.com/24422019/144341602-86e17ae4-3991-470f-9d56-b5dd3ac18941.png)
+
 <br/>
 
-## 🤖 Technologies & Standards
+## ✅ Technologies & Standards
 
 1. [Laravel](https://laravel.com/docs/8.x) `v8`
 2. [Laravel Eloquent](https://laravel.com/docs/8.x/eloquent)
