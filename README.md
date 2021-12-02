@@ -21,7 +21,8 @@
 
 A manager and backend server for Automated Autonomous Drone Communication System.
 
-🔨 Built with [Laravel Jetstream](https://jetstream.laravel.com) and [Inertia.js](https://inertiajs.com) for Single Page Application builder ([PWA](https://web.dev/progressive-web-apps) enabled).
+🔨 Built with [Laravel Jetstream](https://jetstream.laravel.com) and [Inertia.js](https://inertiajs.com) for Single Page
+Application builder ([PWA](https://web.dev/progressive-web-apps) enabled).
 
 ⚡ Supercharged with [Laravel Octane](https://laravel.com/docs/8.x/octane) for massive server performance boost.
 
@@ -32,7 +33,9 @@ A manager and backend server for Automated Autonomous Drone Communication System
 
 ### 🤖 Runtime Components
 
-In order to test the ADCS functionalities, you need to run several component instance based on this [repository](https://github.com/ezralazuardy/adcs-runtime). Based on the given topology below, you need to run the Drone instances (min. 1 instance) and the Commander Server instance.
+In order to test the ADCS functionalities, you need to run several component instance based on
+this [repository](https://github.com/ezralazuardy/adcs-runtime). Based on the given topology below, you need to run the
+Drone instances (min. 1 instance) and the Commander Server instance.
 
 ### 🗺️ Topology
 
@@ -58,13 +61,13 @@ In order to test the ADCS functionalities, you need to run several component ins
 14. [PHP PSR2 Coding Style Standard](https://www.php-fig.org/psr/psr-2)
 15. [PHPStan](https://phpstan.org/) (with [Larastan](https://github.com/nunomaduro/larastan) extension)
 16. [Inertia.js](https://inertiajs.com)
-17. [Inertia.js Tables](https://github.com/protonemedia/inertiajs-tables-laravel-query-builder)
-18. [Vue.js](https://vuejs.org)
-19. [Webpack](https://webpack.js.org)
-20. [Supercronic](https://github.com/aptible/supercronic)
-21. [Supervisor](http://supervisord.org/index.html)
-22. [MySQL 5.x](https://dev.mysql.com)
-23. [PHP MQTT](https://github.com/php-mqtt/client)
+17. [Vue.js](https://vuejs.org)
+18. [Webpack](https://webpack.js.org)
+19. [Supercronic](https://github.com/aptible/supercronic)
+20. [Supervisor](http://supervisord.org/index.html)
+21. [MySQL](https://dev.mysql.com) `v5`
+22. [PHP MQTT](https://github.com/php-mqtt/client)
+23. [Pusher](https://pusher.com)
 24. [Swoole](https://www.swoole.co.uk) <sup><i>optional</i></sup>
 25. [Github Action CI/CD](https://github.com/features/actions) <sup><i>optional</i></sup>
 26. [Docker](https://www.docker.com) <sup><i>optional</i></sup>
@@ -118,7 +121,8 @@ Langkah tradisional untuk melakukan deploy aplikasi pada local atau self-hosted 
 3. MySQL Server `v5.7`
 4. NodeJS `v16`
 5. Yarn `v1`
-6. [Laravel Homestead](https://laravel.com/docs/8.x/homestead) / [Laravel Valet](https://laravel.com/docs/8.x/valet) <sup><i>optional</i></sup>
+6. [Laravel Homestead](https://laravel.com/docs/8.x/homestead)
+   / [Laravel Valet](https://laravel.com/docs/8.x/valet) <sup><i>optional</i></sup>
 
 #### 🖥️ Installation
 
