@@ -22,7 +22,6 @@ trait HasProfilePhoto
                     'profile-photos', ['disk' => $this->profilePhotoDisk()]
                 ),
             ])->save();
-
             if ($previous) {
                 Storage::disk($this->profilePhotoDisk())->delete($previous);
             }
@@ -39,9 +38,9 @@ trait HasProfilePhoto
         if (!Features::managesProfilePhotos()) {
             return;
         }
-
-        Storage::disk($this->profilePhotoDisk())->delete($this->profile_photo_path);
-
+        if ($this->profile_photo_path) {
+            Storage::disk($this->profilePhotoDisk())->delete($this->profile_photo_path);
+        }
         $this->forceFill([
             'profile_photo_path' => null,
         ])->save();

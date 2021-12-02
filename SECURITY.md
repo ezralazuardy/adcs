@@ -10,4 +10,4 @@ Project versions that are currently being supported with security updates.
 
 ## 👮 Reporting a Vulnerability
 
-If you find any kind of vulnerability in this project, please report it to us via [email](mailto:ezralucio@gmail.com).
+If you found any kind of vulnerability in this project, please make a new [issue](https://github.com/ezralazuardy/adcs/issues) with **vulnerability** [label](https://github.com/ezralazuardy/adcs/labels).
