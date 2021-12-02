@@ -32,7 +32,7 @@ A manager and backend server for Automated Autonomous Drone Communication System
 
 ### 🤖 Runtime Components
 
-In order to test the ADCS functionalities, you need to run several component instance in this [repository](https://github.com/ezralazuardy/adcs-runtime). Based on the given topology below, you need to run the Drone instances (min. 1 instance) and the Commander Server instance.
+In order to test the ADCS functionalities, you need to run several component instance based on this [repository](https://github.com/ezralazuardy/adcs-runtime). Based on the given topology below, you need to run the Drone instances (min. 1 instance) and the Commander Server instance.
 
 ### 🗺️ Topology
 
