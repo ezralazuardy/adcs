@@ -11,7 +11,7 @@
         "php": "^8.0",
         "ext-pdo": "*",
         "based/laravel-fluent": "^0.0.6",
-        "fakerphp/faker": "1.16.0",
+        "fakerphp/faker": "1.17.0",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "7.4.0",
         "inertiajs/inertia-laravel": "^0.4.3",
