@@ -89,4 +89,4 @@ jobs:
         run: composer lint
 
       - name: 🧪 Run Application Test
-        run: php artisan test
+        run: php artisan test --no-interaction
