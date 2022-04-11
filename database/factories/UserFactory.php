@@ -25,7 +25,7 @@ class UserFactory extends Factory
     {
         $email = $this->faker->email();
         return [
-            'role' => Role::operator(),
+            'role_id' => Role::operator()?->id ?? 2,
             'name' => $this->faker->name(),
             'phone' => $this->faker->phoneNumber(),
             'email' => $email,
