@@ -18,10 +18,10 @@ class ProfileInformationTest extends TestCase
 
         $this->put("/user/profile-information", [
             "name" => "Test Name",
-            "email" => "test@example.com",
+            "phone" => "(+62) 675 5823 100",
         ]);
 
         $this->assertEquals("Test Name", $user->fresh()->name);
-        $this->assertEquals("test@example.com", $user->fresh()->email);
+        $this->assertEquals("(+62) 675 5823 100", $user->fresh()->phone);
     }
 }
