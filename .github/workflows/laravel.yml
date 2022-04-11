@@ -87,3 +87,6 @@ jobs:
 
       - name: 🧪 Run Application Linter (Static Code Analyzer) via PHPStan
         run: composer lint
+
+      - name: 🧪 Run Application Test
+        run: php artisan test
