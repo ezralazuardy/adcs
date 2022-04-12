@@ -13,14 +13,19 @@ class CreateRolesTable extends Migration
      */
     public function up(): void
     {
-        Schema::create('roles', function (Blueprint $table) {
+        Schema::create("roles", function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string("name");
             $table->timestamps();
             $table->softDeletes();
         });
-        Schema::table('users', function (Blueprint $table) {
-            $table->foreignId('role_id')->after('id')->constrained();
+        Schema::table("users", function (Blueprint $table) {
+            $table
+                ->foreignId("role_id")
+                ->after("id")
+                ->index()
+                ->constrained()
+                ->onDelete("cascade");
         });
     }
 
@@ -31,9 +36,9 @@ class CreateRolesTable extends Migration
      */
     public function down(): void
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->dropForeign('users_role_id_foreign');
+        Schema::table("users", function (Blueprint $table) {
+            $table->dropForeign("users_role_id_foreign");
         });
-        Schema::dropIfExists('roles');
+        Schema::dropIfExists("roles");
     }
 }
