@@ -89,6 +89,9 @@ jobs:
         run: composer lint
 
       - name: 🧪 Run Application Test via PHPUnit
-        run: ./vendor/bin/phpunit
+        run: |
+          php artisan config:cache
+          php artisan config:clear
+          php artisan test
         env:
           APP_ENV: testing
