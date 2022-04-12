@@ -2,9 +2,9 @@ name: Laravel
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
@@ -87,3 +87,8 @@ jobs:
 
       - name: 🧪 Run Application Linter (Static Code Analyzer) via PHPStan
         run: composer lint
+
+      - name: 🧪 Run Application Test via PHPUnit
+        run: ./vendor/bin/phpunit
+        env:
+          APP_ENV: testing
