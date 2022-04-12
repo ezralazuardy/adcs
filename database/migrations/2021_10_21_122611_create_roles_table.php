@@ -23,10 +23,10 @@ class CreateRolesTable extends Migration
             $table
                 ->foreignId("role_id")
                 ->after("id")
+                ->default(2)
                 ->index()
                 ->constrained()
-                ->onDelete("cascade")
-                ->default(2);
+                ->onDelete("cascade");
         });
     }
 
