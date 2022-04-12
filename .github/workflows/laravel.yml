@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - name: 📥 Install Github Action Checkout
         uses: actions/checkout@v2
@@ -90,8 +90,5 @@ jobs:
 
       - name: 🧪 Run Application Test via PHPUnit
         run: |
-          php artisan config:cache
           php artisan config:clear
           php artisan test
-        env:
-          APP_ENV: testing

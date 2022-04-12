@@ -1,14 +1,14 @@
 name: Docker
 
 on:
-  push:
+  workflow_run:
     branches: [main]
-  pull_request:
-    branches: [main]
+    workflows: [Laravel]
+    types: [completed]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - name: 📥 Install Github Action Checkout
         uses: actions/checkout@v2
@@ -93,9 +93,8 @@ jobs:
 
       - name: 🧪 Run Application Test via PHPUnit
         run: |
-          docker exec -t adcs-laravel.test-1 php artisan config:cache
           docker exec -t adcs-laravel.test-1 php artisan config:clear
-          docker exec -t adcs-laravel.test-1 export APP_ENV=testing && ./vendor/bin/phpunit
+          docker exec -t adcs-laravel.test-1 php artisan test
 
       - name: 🛑 Stop Application Containers
         run: docker compose down
