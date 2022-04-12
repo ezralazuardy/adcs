@@ -90,7 +90,7 @@ jobs:
           docker exec -t adcs-laravel.test-1 php artisan view:cache
 
       - name: 🎨 Run Laravel Mix for Production
-        run: docker exec -t adcs-laravel.test-1 npm run
+        run: docker exec -t adcs-laravel.test-1 npm run production
 
       - name: 🧪 Run Application Linter (Static Code Analyzer) via PHPStan
         run: docker exec -t adcs-laravel.test-1 composer lint
