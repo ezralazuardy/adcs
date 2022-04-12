@@ -20,7 +20,7 @@
         "laravel/octane": "^1.0",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
-        "monicahq/laravel-cloudflare": "^2.0",
+        "monicahq/laravel-cloudflare": "^3.2",
         "php-mqtt/client": "^1.1",
         "protonemedia/inertiajs-tables-laravel-query-builder": "^1.2",
         "pusher/pusher-php-server": "^7.0",
