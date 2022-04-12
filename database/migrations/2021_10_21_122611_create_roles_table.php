@@ -25,7 +25,8 @@ class CreateRolesTable extends Migration
                 ->after("id")
                 ->index()
                 ->constrained()
-                ->onDelete("cascade");
+                ->onDelete("cascade")
+                ->default(2);
         });
     }
 
